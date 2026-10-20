@@ -5,6 +5,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Navbar from "./components/Navbar";
 import AlumnoCard from "./components/AlumnoCard";
+import Contador from "./components/Contador";
 
 function App() {
   return (
@@ -15,45 +16,53 @@ function App() {
         <h2 className="mb-4">Directorio de Alumnos</h2>
 
         <div className="row">
-          <AlumnoCard
+          
+        <AlumnoCard
           nombre="Daniel Puccio"
           carrera="Desarrollo de Software"
-          estado="Matriculado"
-          />
+          estadoInicial="Matriculado"
+        />
           
           <AlumnoCard
           nombre="Maria Perez"
           carrera="Diseño Grafico"
-          estado="Inactivo"
+          estadoInicial="Inactivo"
           />
 
           <AlumnoCard
           nombre="Carlos Mendoza"
           carrera="Administracion Industrial"
-          estado="Matriculado"
+          estadoInicial="Matriculado"
           />
 
           <AlumnoCard
           nombre="Diego Fernandez"
           carrera="Ciberseguridad"
-          estado="Inactivo"
+          estadoInicial="Inactivo"
           />
 
           <AlumnoCard
           nombre="Camila Vargas"
           carrera="Administración de Empresas"
-          estado="Matriculado"
+          estadoInicial="Matriculado"
           />
 
           <AlumnoCard 
           nombre="Sebastian Flores"
           carrera="Diseño Gráfico"
-          estado="Inactivo"
+          estadoInicial="Inactivo"
           />
         </div>
+        
+        <Contador
+
+        />
+      
       </div>
     </>
   );
 }
 
 export default App;
+
+      
